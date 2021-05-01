@@ -5,7 +5,8 @@
 dockerでの実行手順
 ```
 # 最初にenvを作ってUSERNAMEとPASSWORDにsimplenoteのユーザ名(メールアドレス)とパスワードを設定します
-touch .env
+# 出力先のファイルも作成してください
+touch .env output.txt
 
 # その後dockerをbuildしてattach
 docker build ./
