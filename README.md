@@ -9,7 +9,7 @@ dockerでの実行手順
 touch .env output.txt
 
 # その後dockerをbuildしてattach
-docker build ./
+docker build -t simplenote ./
 docker run -it --env-file .env -v $(pwd):/workdir simplenote /bin/bash
 
 # コンソールからタグ名を指定してpythonを実行するとタグのコンテンツが標準出力に表示されます
